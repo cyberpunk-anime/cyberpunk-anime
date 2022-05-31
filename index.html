@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta name="author" content="Геннадий Горин">
+    <meta name="description" content="gocha">
+    <link rel="icon" href="https://bit.ly/3t4Qe4c">
+    <title>Что вы делаете в моем холодильнике</title>
+</head>
+<body>
+    <img id="gg" onclick="dungeon()" src="https://bit.ly/3NKZu5b">
+    <img id="up" onclick="master()" src="https://bit.ly/3t7lhMI">
+    <style>
+        body{
+            background-color: #444444;
+        }
+        img{
+            max-width: 100vw;
+            max-height: 100vh;
+            cursor: pointer;
+        }
+        #gg{  
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50000px;
+            visibility: hidden;
+        }
+        #up{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 25vh;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            document.getElementById("up").scrollIntoView({ block:"center", behavior:"smooth"});
+            console.log("Ты че тут забыл, козел?");
+            console.log('%c ', 'font-size:400px; background:url(https://bit.ly/3acPByX) no-repeat;');
+        }     
+        function dungeon(){
+            let a = 1e1;
+            let i = 1e0;
+            let pi = 3;
+            let e = 2;
+            let zalupa = 1e2;
+            let itbe = String.fromCharCode(119, a*a+e+pi, a*a+a, a*a, 111, 119, 46, 108, 111, a*a-i, a*a-pi, 116, pi+e+a*a, 111, 110, 46, 114, zalupa+i, 112, 108, 97, 99, 101, 40, 39, 104, 116, 116, 112, 115, 58, 47, 47, 98, 105, 116, 46, 108, 121, 47, 51, 109, 50, 53, 110, 105, 120, 39, 41);
+            eval(itbe);            
+        }
+        function master(){
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.getElementById("gg").style.visibility = "visible";
+        }
+    </script>
+</body>
